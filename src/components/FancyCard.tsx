@@ -3,9 +3,6 @@ import React, { useState } from 'react';
 import MyText from './MyText';
 
 export default function FancyCard() {
-  console.log('????');
-  const [pressColor, setPressColor] = useState('yellow');
-  const [pressText, setPressText] = useState('PRESS?');
   return (
     <View>
       <View style={styles.imageHeader}>
@@ -43,18 +40,6 @@ export default function FancyCard() {
           <Text style={styles.cardFooter}>Tap Image to play video</Text>
         </View>
       </View>
-      <Pressable
-        onPressIn={() => {
-          setPressColor('green');
-          setPressText('PRESSED!');
-        }}
-        onPressOut={() => {
-          setPressColor('yellow');
-          setPressText('PRESS?');
-        }}
-      >
-        <MyText content={pressText} size={28} thisColor={pressColor} />
-      </Pressable>
     </View>
   );
 }
