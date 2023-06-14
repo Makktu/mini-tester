@@ -4,6 +4,7 @@ import BasicCard from './src/components/BasicCard';
 import ElevatedCards from './src/components/ElevatedCards';
 import FancyCard from './src/components/FancyCard';
 import MyCustomButton from './src/components/MyCustomButton';
+import ActionCard from './src/components/ActionCard';
 import { StatusBar } from 'expo-status-bar';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <ElevatedCards />
         <FancyCard />
         <MyCustomButton />
+        <ActionCard />
       </ScrollView>
     </View>
   );
