@@ -10,8 +10,7 @@ export default function BasicCard() {
   // *
   return (
     <>
-      {/* <ScrollView horizontal={true}> */}
-      <View>
+      <View style={{ marginTop: 40 }}>
         <MyText content='Base Materials' size={28} thisColor='skyblue' />
         <ScrollView horizontal={true}>
           <View style={styles.flatDisplayStyle}>

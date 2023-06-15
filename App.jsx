@@ -5,11 +5,12 @@ import ElevatedCards from './src/components/ElevatedCards';
 import FancyCard from './src/components/FancyCard';
 import MyCustomButton from './src/components/MyCustomButton';
 import ActionCard from './src/components/ActionCard';
+import ContactList from './src/components/ContactList';
 import { StatusBar } from 'expo-status-bar';
 
 const App = () => {
   return (
-    <View style={{ backgroundColor: '#000108', height: '100%' }}>
+    <View style={{ backgroundColor: '#212147', height: '100%' }}>
       <SafeAreaView />
       <StatusBar style='light' />
       <ScrollView>
@@ -18,6 +19,7 @@ const App = () => {
         <FancyCard />
         <MyCustomButton />
         <ActionCard />
+        <ContactList />
       </ScrollView>
     </View>
   );
